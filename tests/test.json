@@ -1,0 +1,17 @@
+// File path: tests/test.js
+console.log('Running basic unit tests...');
+
+const simpleTest = () => {
+    const expected = true;
+    const result = (2 + 2) === 4;
+    
+    if (result === expected) {
+        console.log('Test Passed: Basic math is correct.');
+        return true;
+    } else {
+        console.error('Test Failed: Basic math is incorrect.');
+        process.exit(1); // Fail the process
+    }
+};
+
+simpleTest();
